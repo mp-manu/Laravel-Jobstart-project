@@ -28,7 +28,7 @@ class Job extends Model
 
     public function locations()
     {
-        return $this->hasMany(Location::class, 'id', 'location_id)');
+        return $this->hasMany('App\Models\Location', 'id', 'location_id)');
     }
 
 }
